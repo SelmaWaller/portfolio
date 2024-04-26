@@ -1,0 +1,60 @@
+.css-library {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: $gray-100;
+    }
+  
+    .link {
+      color: $blue-60;
+      transition: 150ms ease-in-out;
+      &:hover {
+        color: $blue-80;
+      }
+    }
+  
+    .menu-item,
+    .menu-item__special {
+      font-family: "Montserrat", sans-serif;
+      color: $gray-80;
+      font-weight: 300;
+      font-size: 18px;
+      transition: 150ms ease-in-out;
+      cursor: pointer;
+      &__special {
+        font-style: italic;
+        font-weight: 900;
+        color: transparent;
+        background: $theme-gradient;
+        -webkit-background-clip: text;
+        background-clip: text;
+        max-width: fit-content;
+        &:hover {
+          background-position-x: 8px;
+        }
+      }
+      &:hover {
+        padding-left: 24px;
+      }
+    }
+  
+    button {
+      transition: 150ms ease-in-out;
+      color: $gray-20;
+      border: none;
+      border-radius: $border-base;
+      background-color: $blue-60;
+      padding: $spacing-base;
+      border-radius: $border-base;
+      text-transform: uppercase;
+      font-family: "Julius Sans One", sans-serif;
+      font-weight: 400;
+      &:hover {
+        background-color: $blue-80;
+      }
+    }
+  }
+  
