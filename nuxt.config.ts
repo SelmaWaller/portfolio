@@ -2,9 +2,7 @@ import VitePluginSassDts from "vite-plugin-sass-dts";
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: [
-    "@nuxtjs/tailwindcss",
-  ],
+  modules: ["@nuxtjs/tailwindcss"],
   router: {
     options: {
       scrollBehaviorType: "smooth",
@@ -12,7 +10,7 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      title: "Selma Waller Ísfeld",
+      title: "Selma W Ísfeld | Portfolio",
       meta: [
         {
           name: "description",
@@ -31,6 +29,9 @@ export default defineNuxtConfig({
     typeCheck: true,
     strict: true,
   },
+  devServer: {
+    port: 3001,
+  },
   vite: {
     plugins: [
       VitePluginSassDts({
@@ -38,5 +39,5 @@ export default defineNuxtConfig({
       }),
     ],
   },
-  css: ["~/src/assets/css/main.scss"],
+  css: ["~/assets/css/main.scss"],
 });
