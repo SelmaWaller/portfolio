@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  transition: all $transition-fast;
+  color: var(--color-text);
+}
+body {
+  font-family: "Mada", sans-serif;
+  font-weight: 300;
+  background: var(--color-background);
+}
+.layout {
+  margin: 70px;
+  display: grid;
+  grid-template-columns: min-content auto;
+  grid-gap: 70px;
+  max-width: 100%;
+}
+.content {
+  width: 100%;
+  background: var(--color-background);
+  box-shadow: var(--color-shadow);
+  height: 830px;
+  max-height: 100%;
+  border-radius: $border-xl;
+  padding: $spacing-xl;
+}
+p {
+  font-size: 14px;
+  transition: none;
+}
+.link {
+  color: $blue-base;
+  font-weight: 500;
+  background: $gradient-orange-and-pink;
+  -webkit-background-clip: text;
+  background-clip: text;
+  max-width: fit-content;
+  transition: $transition-base;
+  &:hover {
+    color: transparent;
+  }
+}
+.button {
+  color: var(--color-text);
+  border: none;
+  border-radius: $border-base;
+  background-color: $blue-base;
+  padding: $spacing-base;
+  border-radius: $border-base;
+  text-transform: uppercase;
+  font-family: "Julius Sans One", sans-serif;
+  font-weight: 400;
+  &:hover {
+    background-color: $blue-500;
+  }
+}

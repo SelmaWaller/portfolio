@@ -1,0 +1,135 @@
+// Colors
+$red-50: #fca1a1;
+$red-100: #fa7070;
+$red-200: #f95757;
+$red-300: #f83e3e;
+$red-400: #f72626;
+$red-500: #e20808;
+$red-600: #b10606;
+$red-700: #980505;
+$red-800: #7f0505;
+$red-900: #4e0303;
+$red-base: $red-200;
+
+$orange-50: #ffbca1;
+$orange-100: #ff986d;
+$orange-200: #ff8754;
+$orange-300: #ff753a;
+$orange-400: #ff6321;
+$orange-500: #ed4600;
+$orange-600: #ba3700;
+$orange-700: #a12f00;
+$orange-800: #872800;
+$orange-900: #541900;
+$orange-base: $orange-200;
+
+$yellow-50: #fff3d5;
+$yellow-100: #ffe5a3;
+$yellow-200: #ffde89;
+$yellow-300: #ffd76f;
+$yellow-400: #ffcf56;
+$yellow-500: #ffc123;
+$yellow-600: #efac00;
+$yellow-700: #d59900;
+$yellow-800: #bc8700;
+$yellow-900: #896200;
+$yellow-base: $yellow-200;
+
+$green-50: #cbe5ba;
+$green-100: #afd895;
+$green-200: #a0d182;
+$green-300: #92ca70;
+$green-400: #84c35d;
+$green-500: #6aad40;
+$green-600: #538832;
+$green-700: #48752b;
+$green-800: #3c6324;
+$green-900: #263d17;
+$green-base: $green-400;
+
+$blue-50: #bad5ff;
+$blue-100: #87b6ff;
+$blue-200: #6da7ff;
+$blue-300: #5497ff;
+$blue-400: #3a88ff;
+$blue-500: #0769ff;
+$blue-600: #0053d3;
+$blue-700: #0049ba;
+$blue-800: #003fa0;
+$blue-900: #002b6d;
+$blue-base: $blue-400;
+
+$purple-50: #c5cbff;
+$purple-100: #939dff;
+$purple-200: #7986ff;
+$purple-300: #5f6fff;
+$purple-400: #4658ff;
+$purple-500: #132aff;
+$purple-600: #0016df;
+$purple-700: #0013c6;
+$purple-800: #0011ac;
+$purple-900: #000c79;
+$purple-base: $purple-200;
+
+$pink-50: #ffc7f3;
+$pink-100: #ff93e8;
+$pink-200: #ff7ae2;
+$pink-300: #ff61dd;
+$pink-400: #ff47d7;
+$pink-500: #ff14cc;
+$pink-600: #e000af;
+$pink-700: #c7009b;
+$pink-800: #ad0087;
+$pink-900: #7a0060;
+$pink-base: $pink-400;
+
+$gray-50: #f5f7fa;
+$gray-100: #e6eaf0;
+$gray-200: #d4e1f5;
+$gray-300: #bbc9dd;
+$gray-400: #a0aec3;
+$gray-500: #616e82;
+$gray-600: #3e4b5f;
+$gray-700: #38383c;
+$gray-800: #2a2a2d;
+$gray-900: #1e1e21;
+$gray-base-light: $gray-50;
+$gray-base-dark: $gray-800;
+
+// Gradients
+$gradient-full: linear-gradient(
+  50deg,
+  $orange-200 5%,
+  $pink-400 40%,
+  $purple-200 70%,
+  $blue-400 100%
+);
+$gradient-orange-and-pink: linear-gradient(
+  10deg,
+  $orange-200 20%,
+  $pink-400 80%
+);
+
+// Spacing
+$spacing-base: 10px 20px;
+$spacing-xs: 2px;
+$spacing-md: 5px 15px 10px;
+$spacing-xl: 40px 50px;
+
+// Borders
+$border-base: 4px;
+$border-xs: 3px;
+$border-xl: 10px;
+$border-rounded: 100px;
+
+// Shadows
+$shadow-light:
+  -5px 5px 10px $gray-100,
+  5px -5px 10px white;
+$shadow-dark:
+  -5px 5px 10px $gray-900,
+  5px -5px 10px $gray-700;
+
+// Transitions
+$transition-base: 150ms ease-in-out;
+$transition-fast: 100ms ease-in-out;

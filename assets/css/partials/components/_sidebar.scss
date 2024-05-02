@@ -1,0 +1,108 @@
+@import "~/assets/css/partials/_variables.scss";
+
+.sidebar {
+  width: 170px;
+  max-width: 100%;
+  position: relative;
+  transition: all $transition-base;
+  &__menu {
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-gap: 5px;
+    }
+    &--item {
+      font-family: "Montserrat", sans-serif;
+      color: var(--color-text);
+      font-weight: 300;
+      font-size: 18px;
+      transition: $transition-fast;
+      display: block;
+      cursor: pointer;
+      &.special {
+        font-style: italic;
+        font-weight: 900;
+        color: transparent;
+        background: $gradient-full;
+        -webkit-background-clip: text;
+        background-clip: text;
+        /* background-size: fit-content; */
+        background-size: 40%;
+        &:hover {
+          background-position-x: 24px;
+        }
+      }
+      &:hover {
+        padding-left: 24px;
+      }
+    }
+  }
+  &__info {
+    &--img {
+      position: relative;
+      margin-bottom: 30px;
+      width: 100px;
+      height: 100px;
+      background: var(--color-background);
+      background-size: cover;
+      border-radius: 100px;
+      box-shadow: var(--color-shadow);
+      a {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        border-radius: 100px;
+      }
+    }
+    &--text {
+      margin-bottom: 40px;
+      color: var(--color-text);
+    }
+  }
+  .switch {
+    background-color: $gray-200;
+    border: none;
+    position: absolute;
+    bottom: 0;
+    width: 64px;
+    height: 34px;
+    border-radius: $border-rounded;
+    cursor: pointer;
+    outline: none;
+    box-shadow: var(--color-shadow);
+    &.dark-mode {
+      background-color: $gray-600;
+      box-shadow: var(--color-shadow);
+      .switch__handle {
+        transform: translateX(-30px);
+      }
+    }
+    &__handle {
+      position: absolute;
+      background-color: $blue-base;
+      border-radius: $border-rounded;
+      height: 34px;
+      width: 34px;
+      top: 0;
+      right: 0;
+    }
+    span {
+      position: absolute;
+      z-index: 1;
+      top: 8px;
+      right: 8px;
+      height: 18px;
+      width: 18px;
+      &:nth-child(1) {
+        right: unset;
+        left: 8px;
+      }
+    }
+  }
+}
