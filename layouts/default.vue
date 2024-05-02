@@ -26,7 +26,7 @@ onMounted(() => {
   <div class="layout">
     <div class="sidebar">
       <Info />
-      <Links />
+      <Links :color="isLightMode ? '#3e4b5f' : '#f5f7fa'" />
       <Switch v-model="isLightMode" />
     </div>
     <main class="content">

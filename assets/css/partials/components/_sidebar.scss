@@ -12,15 +12,30 @@
       padding: 0;
       display: grid;
       grid-gap: 5px;
+      li {
+        position: relative;
+      }
     }
     &--item {
+      display: inline-grid;
+      align-items: center;
       font-family: "Montserrat", sans-serif;
       color: var(--color-text);
       font-weight: 300;
       font-size: 18px;
       transition: $transition-fast;
-      display: block;
+      width: 100%;
       cursor: pointer;
+      span {
+        position: absolute;
+        left: 0;
+        opacity: 0;
+        transition: all $transition-fast;
+        color: var(--color-text);
+      }
+      &:hover span {
+        opacity: 1;
+      }
       &.special {
         font-style: italic;
         font-weight: 900;
@@ -106,5 +121,23 @@
         left: 8px;
       }
     }
+  }
+}
+
+.router-link-exact-active {
+  span {
+    opacity: 1;
+    left: -24px;
+    svg path {
+      opacity: 1;
+      stroke: #ff6194;
+      stroke-width: 2;
+    }
+  }
+  &:hover,
+  &:hover.special {
+    cursor: default;
+    padding-left: 0;
+    background-position-x: 0;
   }
 }
