@@ -43,10 +43,12 @@
     &--img {
       position: relative;
       margin-bottom: 30px;
-      width: 100px;
-      height: 100px;
-      background: var(--color-background);
+      width: 120px;
+      height: 120px;
+      background-color: var(--color-background);
+      background-image: url("~/public/img/PXL_20230815_054714709~5.jpeg");
       background-size: cover;
+      background-position: center 51%;
       border-radius: 100px;
       box-shadow: var(--color-shadow);
       a {
