@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { defineProps, defineEmits } from "vue";
-import Moon from "../../svg/Moon.vue";
-import Sun from "../../svg/Sun.vue";
+import Moon from "../svg/Moon.vue";
+import Sun from "../svg/Sun.vue";
 
 const props = defineProps({
   modelValue: Boolean,

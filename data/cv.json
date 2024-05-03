@@ -1,0 +1,94 @@
+{
+  "cv": {
+    "head": {
+      "firstName": "Selma",
+      "lastName": "Waller Ísfeld",
+      "jobTitle": "Frontend developer"
+    },
+    "body": {
+      "sidebar": {
+        "details": {
+          "address": "Lørenskog, Norway",
+          "phone": "+47 941 41 118",
+          "email": "selmawaller@gmail.com",
+          "dob": "1995"
+        },
+        "links": [
+          {
+            "name": "github",
+            "url": "https://github.com/selmawaller"
+          },
+          {
+            "name": "linkedin",
+            "url": "https://linkedin.com/selmawaller"
+          }
+        ],
+        "skills": [
+          {
+            "name": "JavaScript",
+            "level": "80%"
+          },
+          {
+            "name": "Vue3/Nuxt3",
+            "level": "100%"
+          },
+          {
+            "name": "TypeScript",
+            "level": "40%"
+          },
+          {
+            "name": "DevOps/Scrum",
+            "level": "100%"
+          },
+          {
+            "name": "HTML/CSS (SASS)",
+            "level": "100%"
+          }
+        ],
+        "languages": [
+          {
+            "name": "English",
+            "level": "100%"
+          },
+          {
+            "name": "Norwegian",
+            "level": "100%"
+          }
+        ],
+        "interests": [
+          "Spending time with my husband and kids",
+          "Watercolor",
+          "Studying languages (Japanese, Icelandic)",
+          "Amigurumi",
+          "Video- and board games",
+          "Hiking"
+        ]
+      },
+      "content": {
+        "profile": {
+          "text": "I have a lot of experience with UX/UI, and I've designed and developed web applications, created graphic illustrations, icons, logos, and so on."
+        },
+        "employmentHistory": {
+          "role": "Jr Frontend developer",
+          "company": "Glasspaper Soltuoins AS",
+          "location": "Oslo",
+          "startDate": "Sep 2020",
+          "endDate": "Present",
+          "description": "After the trial period at Glasspaper Solutions, I led website design and development projects for various company entities. I collaborated closely with clients for design concepts before executing them independently. My role evolved into exclusive frontend development over several years."
+        },
+        "education": {
+          "degree": "Higher Professional Degree",
+          "institution": "Noroff",
+          "location": "Oslo",
+          "startDate": "Aug 2018",
+          "endDate": "Jun 2020",
+          "description": "Vocational school specializing in frontend development with a strong emphasis on UX/UI design and graphic illustration.",
+          "skills": ["React", "Redux", "JavaScript", "Adobe CC"]
+        },
+        "references": {
+          "text": "References available upon request"
+        }
+      }
+    }
+  }
+}

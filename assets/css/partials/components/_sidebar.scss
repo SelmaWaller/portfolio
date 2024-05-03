@@ -55,6 +55,9 @@
     }
   }
   &__info {
+    p {
+      font-family: "Mada", sans-serif;
+    }
     &--img {
       position: relative;
       margin-bottom: 30px;
@@ -80,6 +83,9 @@
     &--text {
       margin-bottom: 40px;
       color: var(--color-text);
+      a {
+        font-family: "Mada", sans-serif;
+      }
     }
   }
   .switch {
