@@ -8,32 +8,32 @@ import Arrow from "~/src/components/svg/Arrow.vue";
     <ul>
       <li>
         <NuxtLink class="sidebar__menu--item" to="/cv"
-          ><span><Arrow color="#000" /></span>CV</NuxtLink
+          ><span><Arrow :color="color" /></span>CV</NuxtLink
         >
       </li>
       <li>
         <NuxtLink class="sidebar__menu--item" to="/about-me"
-          ><span><Arrow color="#000" /></span>About me</NuxtLink
+          ><span><Arrow :color="color" /></span>About me</NuxtLink
         >
       </li>
       <li>
         <NuxtLink class="sidebar__menu--item" to="/web-apps"
-          ><span><Arrow color="#000" /></span>Web apps</NuxtLink
+          ><span><Arrow :color="color" /></span>Web apps</NuxtLink
         >
       </li>
       <li>
         <NuxtLink class="sidebar__menu--item" to="/figma"
-          ><span><Arrow color="#000" /></span>Figma</NuxtLink
+          ><span><Arrow :color="color" /></span>Figma</NuxtLink
         >
       </li>
       <li>
         <NuxtLink class="sidebar__menu--item" to="/css-drawings"
-          ><span><Arrow color="#000" /></span>CSS drawings</NuxtLink
+          ><span><Arrow :color="color" /></span>CSS drawings</NuxtLink
         >
       </li>
       <li>
         <NuxtLink class="sidebar__menu--item special" to="/prints"
-          ><span><Arrow color="#000" /></span>Prints</NuxtLink
+          ><span><Arrow :color="color" /></span>Prints</NuxtLink
         >
       </li>
     </ul>
