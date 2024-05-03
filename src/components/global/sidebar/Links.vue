@@ -7,35 +7,33 @@ import Arrow from "~/src/components/svg/Arrow.vue";
   <div class="sidebar__menu">
     <ul>
       <li>
-        <span><Arrow color="#000" /></span>
-        <NuxtLink class="sidebar__menu--item" to="/cv"> CV</NuxtLink>
-      </li>
-      <li>
-        <span><Arrow color="#000" /></span>
-        <NuxtLink class="sidebar__menu--item" to="/about-me">
-          About me</NuxtLink
+        <NuxtLink class="sidebar__menu--item" to="/cv"
+          ><span><Arrow color="#000" /></span>CV</NuxtLink
         >
       </li>
       <li>
-        <span><Arrow color="#000" /></span>
-        <NuxtLink class="sidebar__menu--item" to="/web-apps">
-          Web apps</NuxtLink
+        <NuxtLink class="sidebar__menu--item" to="/about-me"
+          ><span><Arrow color="#000" /></span>About me</NuxtLink
         >
       </li>
       <li>
-        <span><Arrow color="#000" /></span>
-        <NuxtLink class="sidebar__menu--item" to="/figma"> Figma</NuxtLink>
-      </li>
-      <li>
-        <span><Arrow color="#000" /></span>
-        <NuxtLink class="sidebar__menu--item" to="/css-drawings">
-          CSS drawings</NuxtLink
+        <NuxtLink class="sidebar__menu--item" to="/web-apps"
+          ><span><Arrow color="#000" /></span>Web apps</NuxtLink
         >
       </li>
       <li>
-        <span><Arrow color="#000" /></span>
-        <NuxtLink class="sidebar__menu--item special" to="/prints">
-          Prints</NuxtLink
+        <NuxtLink class="sidebar__menu--item" to="/figma"
+          ><span><Arrow color="#000" /></span>Figma</NuxtLink
+        >
+      </li>
+      <li>
+        <NuxtLink class="sidebar__menu--item" to="/css-drawings"
+          ><span><Arrow color="#000" /></span>CSS drawings</NuxtLink
+        >
+      </li>
+      <li>
+        <NuxtLink class="sidebar__menu--item special" to="/prints"
+          ><span><Arrow color="#000" /></span>Prints</NuxtLink
         >
       </li>
     </ul>
