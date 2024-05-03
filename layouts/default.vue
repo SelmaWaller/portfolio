@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { ref, onMounted, watch } from "vue";
-import Info from "~/src/components/global/sidebar/Info.vue";
-import Links from "~/src/components/global/sidebar/Links.vue";
-import Switch from "~/src/components/global/sidebar/Switch.vue";
+import Info from "~/src/components/sidebar/Info.vue";
+import Links from "~/src/components/sidebar/Links.vue";
+import Switch from "~/src/components/sidebar/Switch.vue";
 
 const isLightMode = ref(true);
 
@@ -34,11 +34,3 @@ onMounted(() => {
     </main>
   </div>
 </template>
-
-<style scoped>
-footer {
-  position: absolute;
-  bottom: 0;
-  right: 6px;
-}
-</style>

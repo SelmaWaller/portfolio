@@ -10,8 +10,7 @@
         Hi there, I'm Selma. Mother of two amazing boys, and the lucky wife of
         <a class="link" href="https://github.com/krijoh92" target="_blank"
           >Kristinn</a
-        >. I work as a frontend developer, with experience and passion for
-        design.
+        >. I work as a junior frontend developer with experience in web design.
       </p>
     </div>
   </div>

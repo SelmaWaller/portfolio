@@ -1,5 +1,7 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import CV from "~/src/components/pages/CV.vue";
+</script>
 
 <template>
-  <div></div>
+  <CV />
 </template>
