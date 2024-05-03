@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import data from "~/data/cv.json";
 const head = data.cv.head;
-const sidebar = data.cv.body.sidebar;
 const details = data.cv.body.sidebar.details;
 const links = data.cv.body.sidebar.links;
 const skills = data.cv.body.sidebar.skills;

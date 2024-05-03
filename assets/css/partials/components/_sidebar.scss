@@ -93,8 +93,8 @@
     border: none;
     position: absolute;
     bottom: 0;
-    width: 64px;
-    height: 34px;
+    width: 56px;
+    height: 28px;
     border-radius: $border-rounded;
     cursor: pointer;
     outline: none;
@@ -103,28 +103,28 @@
       background-color: $gray-600;
       box-shadow: var(--color-shadow);
       .switch__handle {
-        transform: translateX(-30px);
+        transform: translateX(-28px);
       }
     }
     &__handle {
       position: absolute;
       background-color: $blue-base;
       border-radius: $border-rounded;
-      height: 34px;
-      width: 34px;
+      height: 28px;
+      width: 28px;
       top: 0;
       right: 0;
     }
     span {
       position: absolute;
       z-index: 1;
-      top: 8px;
-      right: 8px;
+      top: 5px;
+      right: 5px;
       height: 18px;
       width: 18px;
       &:nth-child(1) {
         right: unset;
-        left: 8px;
+        left: 5px;
       }
     }
   }
