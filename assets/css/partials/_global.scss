@@ -73,15 +73,15 @@ a {
   }
 }
 .button {
-  color: var(--color-text);
+  color: $gray-50;
   border: none;
   border-radius: $border-base;
   background-color: $blue-base;
   padding: $spacing-base;
   border-radius: $border-base;
   text-transform: uppercase;
-  font-family: "Julius Sans One", sans-serif;
-  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
   &:hover {
     background-color: $blue-500;
   }
