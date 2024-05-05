@@ -3,7 +3,7 @@
 <template>
   <div class="sidebar__info">
     <div class="sidebar__info--img">
-      <NuxtLink style="height: 100%; width: 100%" to="/"></NuxtLink>
+      <NuxtLink to="/"></NuxtLink>
     </div>
     <div class="sidebar__info--text">
       <p>

@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  transition: all $transition-fast;
   color: var(--color-text);
   font-family: "Montserrat", sans-serif;
 }
@@ -40,7 +39,7 @@ h6 {
   margin: 70px;
   display: grid;
   grid-template-columns: min-content auto;
-  grid-gap: 100px;
+  gap: 100px;
   max-width: 100%;
 }
 .content {
@@ -57,7 +56,6 @@ p,
 li,
 a {
   font-size: $font-md;
-  transition: none;
 }
 .link {
   color: $blue-base;
