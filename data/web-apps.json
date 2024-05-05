@@ -1,0 +1,24 @@
+{
+  "apps": [
+    {
+      "previewImg": "/img/web-apps/yumiru.png",
+      "title": "Japanese basics",
+      "subtitle": "2020",
+      "subtitleLink": "https://github.com/SelmaWaller/yumiru",
+      "subtitleLinkText": "github repo",
+      "description": "Japanese hobby app, created to practice styled components",
+      "projectUrl": "https://yumiru.netlify.app/",
+      "buttonText": "Check it out"
+    },
+    {
+      "previewImg": "/img/web-apps/mtg.png",
+      "title": "MTG: Web app",
+      "subtitle": "2020",
+      "subtitleLink": "https://github.com/SelmaWaller/magic-the-gathering",
+      "subtitleLinkText": "github repo",
+      "description": "A web app that allows users to search for magic cards and view their card details",
+      "projectUrl": "https://mtg-scryfall.netlify.app/",
+      "buttonText": "Check it out"
+    }
+  ]
+}

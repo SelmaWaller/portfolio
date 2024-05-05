@@ -1,3 +1,7 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import ProjectCard from "~/src/components/global/ProjectCard.vue";
+</script>
 
-<template></template>
+<template>
+  <div><ProjectCard /></div>
+</template>
