@@ -31,8 +31,6 @@ const references = data.cv.body.content.references;
             <p>{{ details.address }}</p>
             <h5>Phone</h5>
             <p>{{ details.phone }}</p>
-            <h5>Email</h5>
-            <p>{{ details.email }}</p>
             <h5>Date of birth</h5>
             <p>{{ details.dob }}</p>
           </div>
