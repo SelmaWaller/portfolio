@@ -1,0 +1,47 @@
+@import "~/assets/css/partials/_variables.scss";
+
+.card {
+  display: flex;
+  max-width: 100%;
+  &__preview,
+  &__info {
+    background-color: var(--color-card-background);
+    box-shadow: var(--color-card-shadow);
+    width: 266px;
+    height: 185px;
+    border-radius: $border-base;
+    border-bottom-right-radius: 0;
+    padding: 2px;
+    position: relative;
+    cursor: pointer;
+    img {
+      border-radius: $border-xs;
+      width: 100%;
+      background-size: cover;
+      background-position: center center;
+    }
+    .hide-shadow {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background: var(--color-card-background);
+      z-index: 1;
+      border-radius: $border-base;
+      border-bottom-right-radius: 0;
+    }
+  }
+  &__info {
+    height: 170px;
+    max-height: 100%;
+    bottom: 0;
+    margin-top: 15px;
+    border-bottom-right-radius: $border-base;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+  }
+  &:hover {
+    transform: translateY(-2px);
+  }
+}

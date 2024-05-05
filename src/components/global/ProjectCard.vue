@@ -1,16 +1,43 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import ProjectCardElement from "../svg/ProjectCardElement.vue";
+
+const project = {
+  heading: "Project X",
+  subheading: "2021",
+  subheadingLink: "#",
+  subheadingLinkText: "hobby project",
+  preview: "url(https://picsum.photos/200/300)",
+  description: "Redesign av sikkerhetsdistributoren.no",
+  buttonText: "Open in Figma",
+  projectUrl: "https://figma.com",
+};
+
+const openProject = (url: string) => {
+  window.open(url, "_blank");
+};
+</script>
 
 <template>
   <div class="card">
-    <div class="card__img">
-      <img src="/public/img/PXL_20230815_054714709~5.jpeg" alt="" />
+    <div class="card__preview">
+      <div
+        class="card__preview--img"
+        :style="{ backgroundImage: project.preview }"
+      ></div>
+      <div class="hide-shadow"></div>
     </div>
-    <div class="card__element"></div>
     <div class="card__info">
-      <h4>Project Name</h4>
-      <p>Project date - repo</p>
-      <p>Description</p>
-      <button class="button">Button text</button>
+      <h4>{{ project.heading }}</h4>
+      <p>
+        {{ project.subheading }} -
+        <a :href="project.subheadingLink" target="_blank">{{
+          project.subheading
+        }}</a>
+      </p>
+      <p>{{ project.description }}</p>
+      <button class="button" @click="openProject(project.projectUrl)">
+        {{ project.buttonText }}
+      </button>
     </div>
   </div>
 </template>

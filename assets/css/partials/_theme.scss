@@ -7,6 +7,10 @@
   --color-elements-dark: #434b56;
   --color-shadow-light: -5px 5px 10px #e6eaf0, 5px -5px 10px #fff;
   --color-shadow-dark: -5px 5px 10px #1e1e21, 5px -5px 10px #38383c;
+  --color-card-shadow-light: 0 0 15px #e6eaf0;
+  --color-card-shadow-dark: 0 0 15px #1e1e21;
+  --color-card-background-light: #fff;
+  --color-card-background-dark: #38383c;
 }
 
 body.light-mode {
@@ -14,10 +18,14 @@ body.light-mode {
   --color-text: var(--color-text-light);
   --color-shadow: var(--color-shadow-light);
   --color-elements: var(--color-elements-light);
+  --color-card-shadow: var(--color-card-shadow-light);
+  --color-card-background: var(--color-card-background-light);
 }
 body.dark-mode {
   --color-background: var(--color-background-dark);
   --color-text: var(--color-text-dark);
   --color-shadow: var(--color-shadow-dark);
   --color-elements: var(--color-elements-dark);
+  --color-card-shadow: var(--color-card-shadow-dark);
+  --color-card-background: var(--color-card-background-dark);
 }
