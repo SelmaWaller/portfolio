@@ -83,4 +83,12 @@ a {
   &:hover {
     background-color: $blue-500;
   }
+  &:disabled,
+  [disabled] {
+    cursor: default;
+    background-color: $blue-200;
+    &:hover {
+      background-color: $blue-200;
+    }
+  }
 }
