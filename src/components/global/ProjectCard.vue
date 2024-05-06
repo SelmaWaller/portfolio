@@ -11,7 +11,7 @@ const openProject = (url: string) => {
       <div class="card__preview">
         <div
           class="card__preview--img"
-          :style="{ backgroundImage: 'url(' + project.previewImg + ')' }"
+          :style="{ backgroundImage: 'url(' + project.preview + ')' }"
         ></div>
         <div class="hide-shadow"></div>
         <div class="corner-element"></div>

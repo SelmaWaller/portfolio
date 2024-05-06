@@ -1,7 +1,7 @@
 {
   "apps": [
     {
-      "previewImg": "/img/web-apps/yumiru.png",
+      "preview": "/img/web-apps/yumiru.gif",
       "title": "Japanese basics",
       "subtitle": "2020",
       "subtitleLink": "https://github.com/SelmaWaller/yumiru",
@@ -11,13 +11,53 @@
       "buttonText": "Check it out"
     },
     {
-      "previewImg": "/img/web-apps/mtg.png",
+      "preview": "/img/web-apps/mtg.gif",
       "title": "MTG: Web app",
       "subtitle": "2020",
       "subtitleLink": "https://github.com/SelmaWaller/magic-the-gathering",
       "subtitleLinkText": "github repo",
-      "description": "A web app that allows users to search for magic cards and view their card details",
+      "description": "Final project of the React course created with Scryfall’s API",
       "projectUrl": "https://mtg-scryfall.netlify.app/",
+      "buttonText": "Check it out"
+    },
+    {
+      "preview": "/img/web-apps/css-game.gif",
+      "title": "CSS animation game",
+      "subtitle": "2019",
+      "subtitleLink": "https://github.com/SelmaWaller/adventure-game",
+      "subtitleLinkText": "github repo",
+      "description": "A multiple choice game for practicing CSS drawings and animations",
+      "projectUrl": "https://illustrated-adventure-game.netlify.app/",
+      "buttonText": "Check it out"
+    },
+    {
+      "preview": "/img/web-apps/goz.gif",
+      "title": "Game of Zones",
+      "subtitle": "2019",
+      "subtitleLink": "https://github.com/SelmaWaller/game-of-zones",
+      "subtitleLinkText": "github repo",
+      "description": "Semester project. A Game of Thrones themed \"Snakes & Ladders\" game",
+      "projectUrl": "https://game-of-zones.netlify.app/",
+      "buttonText": "Check it out"
+    },
+    {
+      "preview": "/img/web-apps/spacex.gif",
+      "title": "Spacex microsite",
+      "subtitle": "2019",
+      "subtitleLink": "https://github.com/SelmaWaller/spacex",
+      "subtitleLinkText": "github repo",
+      "description": "First JS project exam",
+      "projectUrl": "https://spacex-microsite.netlify.app/",
+      "buttonText": "Check it out"
+    },
+    {
+      "preview": "/img/web-apps/unso.gif",
+      "title": "UN Students Oslo",
+      "subtitle": "2018",
+      "subtitleLink": "https://github.com/SelmaWaller/un-students-oslo",
+      "subtitleLinkText": "github repo",
+      "description": "My first HTML/CSS website 🥳 Graphic elements created in Adobe Illustrator",
+      "projectUrl": "https://un-students.netlify.app/",
       "buttonText": "Check it out"
     }
   ]
