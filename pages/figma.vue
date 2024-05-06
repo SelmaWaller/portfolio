@@ -1,5 +1,8 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import ProjectCard from "~/src/components/global/ProjectCard.vue";
+import projects from "~/data/figma.json";
+</script>
 
 <template>
-  <div></div>
+  <div><ProjectCard :projects="projects.projects" /></div>
 </template>
