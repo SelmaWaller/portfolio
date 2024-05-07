@@ -1,6 +1,15 @@
 {
   "apps": [
     {
+      "preview": "/img/web-apps/rehash.gif",
+      "title": "Rehash project",
+      "subtitle": "2024",
+      "subtitleLink": "https://github.com/SelmaWaller/typescript",
+      "subtitleLinkText": "github repo",
+      "description": "Created my own docs for a better understanding of JS and TS, the new and improved Vue & Nuxt 3",
+      "buttonText": "Check it out"
+    },
+    {
       "preview": "/img/web-apps/yumiru.gif",
       "title": "Japanese basics",
       "subtitle": "2020",

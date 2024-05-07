@@ -38,7 +38,7 @@ const openProject = (url: string) => {
         >
           {{ project.buttonText }}
         </button>
-        <button v-else class="button" disabled>Open in Figma</button>
+        <button v-else class="button" disabled>{{ project.buttonText }}</button>
       </div>
     </div>
   </div>
