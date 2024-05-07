@@ -1,5 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div></div>
+  <div class="under-construction">
+    <p>CSS drawings and animations</p>
+  </div>
 </template>

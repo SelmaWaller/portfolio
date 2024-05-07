@@ -12,11 +12,6 @@ import Arrow from "~/src/components/svg/Arrow.vue";
         >
       </li>
       <li>
-        <NuxtLink class="sidebar__menu--item" to="/about-me"
-          ><span><Arrow :color="color" /></span>About me</NuxtLink
-        >
-      </li>
-      <li>
         <NuxtLink class="sidebar__menu--item" to="/web-apps"
           ><span><Arrow :color="color" /></span>Web apps</NuxtLink
         >

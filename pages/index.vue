@@ -1,3 +1,7 @@
 <script setup lang="ts"></script>
 
-<template>This project is a work in progress :-)</template>
+<template>
+  <div class="under-construction">
+    <p>Thanks for checking out my portfolio!</p>
+  </div>
+</template>
