@@ -1,7 +1,7 @@
 {
   "projects": [
     {
-      "preview": "img/figma/cms-prototype.gif",
+      "preview": "img/figma/cms-prototype.webp",
       "title": "CMS prototype",
       "subtitle": "2023",
       "subtitleNoLinkText": "@work, UX/UI",
@@ -9,7 +9,7 @@
       "buttonText": "Open in Figma"
     },
     {
-      "preview": "img/figma/gps.gif",
+      "preview": "img/figma/gps.webp",
       "title": "Glasspaper Soltions",
       "subtitle": "2023",
       "subtitleNoLinkText": "@work, UX/UI",
@@ -27,7 +27,7 @@
       "buttonText": "Open in Figma"
     },
     {
-      "preview": "img/figma/adminportal.gif",
+      "preview": "img/figma/adminportal.webp",
       "title": "Admin portal",
       "subtitle": "2021",
       "subtitleNoLinkText": "@work, first UX/UI project 🥳",
