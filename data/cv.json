@@ -25,34 +25,34 @@
         ],
         "skills": [
           {
-            "name": "JavaScript",
-            "level": "80%"
+            "name": "Typescript",
+            "level": "40"
           },
           {
             "name": "Vue3/Nuxt3",
-            "level": "100%"
+            "level": "90"
           },
           {
-            "name": "TypeScript",
-            "level": "40%"
+            "name": "Git",
+            "level": "80"
           },
           {
             "name": "HTML/CSS (SASS)",
-            "level": "100%"
+            "level": "100"
           },
           {
             "name": "Scrum/Agile",
-            "level": "100%"
+            "level": "100"
           }
         ],
         "languages": [
           {
             "name": "English",
-            "level": "100%"
+            "level": "100"
           },
           {
             "name": "Norwegian",
-            "level": "100%"
+            "level": "100"
           }
         ],
         "interests": [

@@ -1,0 +1,21 @@
+@import "~/assets/css/partials/_variables.scss";
+
+.mq {
+  &-sm {
+    display: none;
+    @media screen and (max-width: $breakpoint-md) {
+      display: block;
+    }
+  }
+  &-md {
+    display: none;
+    @media screen and (max-width: $breakpoint-md) {
+      display: block;
+    }
+  }
+  &-lg {
+    @media screen and (max-width: $breakpoint-md) {
+      display: none;
+    }
+  }
+}

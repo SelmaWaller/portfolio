@@ -14,7 +14,7 @@ body {
   justify-content: center;
   align-items: center;
   p {
-    font-size: 16px;
+    font-size: $font-lg;
   }
 }
 h1,
@@ -28,15 +28,27 @@ h6 {
 }
 h1 {
   font-size: $font-xxl;
+  @media screen and (max-width: $breakpoint-xxl) {
+    font-size: $font-lg;
+  }
 }
 h2 {
   font-size: $font-xl;
+  @media screen and (max-width: $breakpoint-xxl) {
+    font-size: $font-md;
+  }
 }
 h3 {
   font-size: $font-lg;
+  @media screen and (max-width: $breakpoint-xxl) {
+    font-size: $font-sm;
+  }
 }
 h4 {
   font-size: $font-md;
+  @media screen and (max-width: $breakpoint-xxl) {
+    font-size: $font-xs;
+  }
 }
 h5 {
   font-size: $font-sm;
@@ -44,13 +56,29 @@ h5 {
 h6 {
   font-size: $font-xs;
 }
-
+p,
+li,
+a {
+  font-size: $font-md;
+  line-height: 24px;
+  @media screen and (max-width: $breakpoint-md) {
+    font-size: $font-sm;
+    line-height: 22px;
+  }
+}
 .layout {
   margin: 70px;
   display: grid;
   grid-template-columns: min-content auto;
   gap: 100px;
   max-width: 100%;
+  @media screen and (max-width: $breakpoint-md) {
+    margin: 20px 15px;
+  }
+  @media screen and (min-width: $breakpoint-md) and (max-width: $breakpoint-xxl) {
+    margin: 40px 30px;
+    gap: 50px;
+  }
 }
 .content {
   width: 100%;
@@ -61,12 +89,18 @@ h6 {
   padding: $spacing-xl;
   overflow: auto;
   position: relative;
-}
-p,
-li,
-a {
-  font-size: $font-md;
-  line-height: 24px;
+  @media screen and (max-width: $breakpoint-xxl) {
+    padding: 10px;
+    height: 90vh;
+  }
+  @media screen and (min-width: $breakpoint-md) and (max-width: $breakpoint-xxl) {
+    padding: 20px 15px;
+  }
+  @media screen and (max-width: $breakpoint-md) {
+    min-height: 80vh;
+    align-items: center;
+    height: unset;
+  }
 }
 .link {
   color: $blue-base;
@@ -100,5 +134,9 @@ a {
     &:hover {
       background-color: $blue-200;
     }
+  }
+  @media screen and (max-width: $breakpoint-xxl) {
+    font-size: $font-sm;
+    padding: 8px 16px;
   }
 }

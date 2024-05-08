@@ -1,0 +1,29 @@
+{
+  "items": [
+    {
+      "name": "CV",
+      "path": "/cv",
+      "special": false
+    },
+    {
+      "name": "Web apps",
+      "path": "/web-apps",
+      "special": false
+    },
+    {
+      "name": "Figma",
+      "path": "/figma",
+      "special": false
+    },
+    {
+      "name": "CSS drawings",
+      "path": "/css-drawings",
+      "special": false
+    },
+    {
+      "name": "Prints",
+      "path": "/prints",
+      "special": true
+    }
+  ]
+}
