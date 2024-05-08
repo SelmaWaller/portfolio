@@ -1,15 +1,10 @@
 <script setup lang="ts">
 import data from "~/data/cv.json";
-const head = data.cv.head;
-const details = data.cv.body.sidebar.details;
-const links = data.cv.body.sidebar.links;
-const skills = data.cv.body.sidebar.skills;
-const languages = data.cv.body.sidebar.languages;
-const interests = data.cv.body.sidebar.interests;
-const profile = data.cv.body.content.profile;
-const employmentHistory = data.cv.body.content.employmentHistory;
-const education = data.cv.body.content.education;
-const references = data.cv.body.content.references;
+import CVBodySection from "../cv/Section.vue";
+
+const { head, body } = data.cv;
+const { details, links, skills, languages, interests } = body.sidebar;
+const { profile, employmentHistory, education, references } = body.content;
 </script>
 
 <template>
@@ -23,10 +18,8 @@ const references = data.cv.body.content.references;
     <div class="cv__body">
       <div class="cv__body--sidebar">
         <div class="divider"></div>
-        <div class="section">
-          <h3>Details</h3>
-          <div class="heading-element"></div>
-          <div class="section__content">
+        <CVBodySection title="Details">
+          <div>
             <h5>Address</h5>
             <p>{{ details.address }}</p>
             <h5>Phone</h5>
@@ -34,95 +27,63 @@ const references = data.cv.body.content.references;
             <h5>Date of birth</h5>
             <p>{{ details.dob }}</p>
           </div>
-        </div>
+        </CVBodySection>
 
-        <div class="section">
-          <h3>Links</h3>
-          <div class="heading-element"></div>
-          <div
-            class="section__content"
-            v-for="(link, index) in links"
-            :key="index"
-          >
+        <CVBodySection title="Links">
+          <div v-for="(link, index) in links" :key="index">
             <a class="link" :href="link.url" target="_blank">{{ link.name }}</a>
           </div>
-        </div>
+        </CVBodySection>
 
-        <div class="section">
-          <h3>Skills</h3>
-          <div class="heading-element"></div>
-          <div
-            class="section__content"
-            v-for="(skill, index) in skills"
-            :key="index"
-          >
+        <CVBodySection title="Skills">
+          <div v-for="(skill, index) in skills" :key="index">
             <p>{{ skill.name }}</p>
             <div class="section__content--progress">
-              <span :style="{ width: skill.level }"></span>
+              <span :style="{ width: skill.level + '%' }"></span>
             </div>
           </div>
-        </div>
+        </CVBodySection>
 
-        <div class="section">
-          <h3>Languages</h3>
-          <div class="heading-element"></div>
-          <div
-            class="section__content"
-            v-for="(language, index) in languages"
-            :key="index"
-          >
+        <CVBodySection title="Languages">
+          <div v-for="(language, index) in languages" :key="index">
             <p>{{ language.name }}</p>
             <div class="section__content--progress">
               <span
                 class="section__content--progress-bar"
-                :style="{ width: language.level }"
+                :style="{ width: language.level + '%' }"
               ></span>
             </div>
           </div>
-        </div>
+        </CVBodySection>
 
-        <div class="section">
-          <h3>Interests</h3>
-          <div class="heading-element"></div>
-          <ul
-            class="section__content"
-            v-for="(interest, index) in interests"
-            :key="index"
-          >
+        <CVBodySection title="Interests">
+          <ul v-for="(interest, index) in interests" :key="index">
             <li>- {{ interest }}</li>
           </ul>
-        </div>
+        </CVBodySection>
       </div>
 
       <div class="cv__body--content">
-        <div class="section">
-          <h3>Profile</h3>
-          <div class="heading-element"></div>
+        <CVBodySection :bodyContent="true" title="Profile">
           <p>{{ profile.text }}</p>
-        </div>
+        </CVBodySection>
 
-        <div class="section">
-          <div class="section__divider"></div>
-          <h3>Employment History</h3>
-          <div class="heading-element"></div>
+        <CVBodySection :bodyContent="true" title="Employment History">
           <div class="section__content--flex">
             <p>{{ employmentHistory.role }}, {{ employmentHistory.company }}</p>
-            <p>{{ employmentHistory.location }}</p>
+            <p class="location">{{ employmentHistory.location }}</p>
           </div>
           <p>
             {{ employmentHistory.startDate }} &mdash;
             {{ employmentHistory.endDate }}
           </p>
           <p>{{ employmentHistory.description }}</p>
-        </div>
+        </CVBodySection>
 
-        <div class="section">
-          <div class="section__divider"></div>
-          <h3>Education</h3>
-          <div class="heading-element"></div>
+        <CVBodySection :bodyContent="true" title="Education">
           <div class="section__content--flex">
             <p>{{ education.degree }}, {{ education.institution }}</p>
-            <p>{{ education.location }}</p>
+            <p class="location">{{ education.location }}</p>
           </div>
           <p>
             {{ education.startDate }} &mdash;
@@ -133,14 +94,11 @@ const references = data.cv.body.content.references;
           <ul v-for="(skill, index) in education.skills" :key="index">
             <li>- {{ skill }}</li>
           </ul>
-        </div>
+        </CVBodySection>
 
-        <div class="section">
-          <div class="section__divider"></div>
-          <h3>References</h3>
-          <div class="heading-element"></div>
+        <CVBodySection :bodyContent="true" title="References">
           <p>{{ references.text }}</p>
-        </div>
+        </CVBodySection>
       </div>
     </div>
   </div>

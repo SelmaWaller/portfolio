@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, onMounted, watch } from "vue";
 import Info from "~/src/components/sidebar/Info.vue";
-import Links from "~/src/components/sidebar/Links.vue";
+import DesktopMenu from "~/src/components/sidebar/DesktopMenu.vue";
 import Switch from "~/src/components/sidebar/Switch.vue";
 
 const isLightMode = ref(true);
@@ -23,14 +23,29 @@ onMounted(() => {
 });
 </script>
 <template>
-  <div class="layout">
+  <!-- mobile -->
+  <div class="layout mq-md">
+    <div class="sidebar">
+      <div class="sidebar__switch">
+        <Switch v-model="isLightMode" />
+      </div>
+      <div>
+        <Info />
+      </div>
+    </div>
+    <div class="content">
+      <slot />
+    </div>
+  </div>
+  <!-- desktop -->
+  <div class="layout mq-lg">
     <div class="sidebar">
       <Info />
-      <Links :color="isLightMode ? '#3e4b5f' : '#f5f7fa'" />
+      <DesktopMenu :color="isLightMode ? '#3e4b5f' : '#f5f7fa'" />
       <Switch v-model="isLightMode" />
     </div>
-    <main class="content">
+    <div class="content">
       <slot />
-    </main>
+    </div>
   </div>
 </template>

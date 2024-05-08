@@ -1,12 +1,16 @@
 :root {
   --color-background-light: #f5f7fa;
   --color-background-dark: #2a2a2d;
+  --color-background-modal-light: #f4f6fa;
+  --color-background-modal-dark: #252528;
   --color-text-light: #2a2a2d;
   --color-text-dark: #d4e1f5;
   --color-elements-light: #d4e1f5;
   --color-elements-dark: #434b56;
   --color-shadow-light: -5px 5px 10px #e6eaf0, 5px -5px 10px #fff;
   --color-shadow-dark: -5px 5px 10px #1e1e21, 5px -5px 10px #38383c;
+  --color-shadow-mobile-light: -2.5px 2.5px 5px #e6eaf0, 2.5px -2.5px 5px #fff;
+  --color-shadow-mobile-dark: -2.5px 2.5px 5px #1e1e21, 2.5px -2.5px 5px #38383c;
   --color-card-shadow-light: 0 0 15px #e6eaf0;
   --color-card-shadow-dark: 0 0 15px #1e1e21;
   --color-card-background-light: #fff;
@@ -15,17 +19,25 @@
 
 body.light-mode {
   --color-background: var(--color-background-light);
+  --color-background-modal: var(--color-background-modal-light);
   --color-text: var(--color-text-light);
   --color-shadow: var(--color-shadow-light);
   --color-elements: var(--color-elements-light);
   --color-card-shadow: var(--color-card-shadow-light);
   --color-card-background: var(--color-card-background-light);
+  @media screen and (max-width: $breakpoint-md) {
+    --color-shadow: var(--color-shadow-mobile-light);
+  }
 }
 body.dark-mode {
   --color-background: var(--color-background-dark);
+  --color-background-modal: var(--color-background-modal-dark);
   --color-text: var(--color-text-dark);
   --color-shadow: var(--color-shadow-dark);
   --color-elements: var(--color-elements-dark);
   --color-card-shadow: var(--color-card-shadow-dark);
   --color-card-background: var(--color-card-background-dark);
+  @media screen and (max-width: $breakpoint-md) {
+    --color-shadow: var(--color-shadow-mobile-dark);
+  }
 }

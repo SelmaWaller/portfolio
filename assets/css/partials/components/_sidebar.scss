@@ -5,10 +5,28 @@
   max-width: 100%;
   position: relative;
   transition: all $transition-base;
-  &__info {
+  @media screen and (max-width: $breakpoint-md) {
+    width: unset;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: flex-start;
+    margin-bottom: 25px;
+  }
+  &__intro {
+    @media screen and (max-width: $breakpoint-md) {
+      display: grid;
+      grid-auto-flow: column;
+      gap: 20px;
+    }
     p {
-      line-height: 22px;
       font-family: "Mada", sans-serif;
+      line-height: 22px;
+    }
+    p,
+    a {
+      @media screen and (max-width: $breakpoint-md) {
+        line-height: 20px;
+      }
     }
     &--img {
       position: relative;
@@ -21,6 +39,14 @@
       background-position: center 51%;
       border-radius: 100px;
       box-shadow: var(--color-shadow);
+      @media screen and (max-width: $breakpoint-md) {
+        margin-bottom: 0;
+        background-size: 140%;
+        background-position-y: 42%;
+        width: 90px;
+        height: 110px;
+        border-radius: 4px;
+      }
       a {
         height: 100%;
         width: 100%;
@@ -38,53 +64,16 @@
       a {
         font-family: "Mada", sans-serif;
       }
-    }
-  }
-  &__menu {
-    ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: grid;
-      gap: 6px;
-      li {
-        position: relative;
-      }
-    }
-    &--item {
-      display: inline-grid;
-      align-items: center;
-      font-family: "Montserrat", sans-serif;
-      color: var(--color-text);
-      font-weight: 300;
-      font-size: 18px;
-      transition: $transition-fast;
-      width: 100%;
-      cursor: pointer;
-      span {
-        position: absolute;
-        left: 0;
-        opacity: 0;
-        transition: all $transition-fast;
-        color: var(--color-text);
-      }
-      &:hover span {
-        opacity: 1;
-      }
-      &.special {
-        font-style: italic;
-        font-weight: 900;
-        color: transparent;
-        background: $gradient-full;
-        -webkit-background-clip: text;
-        background-clip: text;
-        background-size: 40%;
-        &:hover {
-          background-position-x: 24px;
+      @media screen and (max-width: $breakpoint-md) {
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        p,
+        a {
+          font-size: $font-md;
+          width: 300px;
+          max-width: 100%;
         }
-      }
-      &:hover {
-        padding-left: 24px;
       }
     }
   }
@@ -114,6 +103,7 @@
       width: 28px;
       top: 0;
       right: 0;
+      transition: $transition-fast;
     }
     span {
       position: absolute;
@@ -127,23 +117,46 @@
         left: 5px;
       }
     }
-  }
-}
-
-.router-link-exact-active {
-  span {
-    opacity: 1;
-    left: -24px;
-    svg path {
-      opacity: 1;
-      stroke: #ff6194;
-      stroke-width: 2;
+    @media screen and (max-width: $breakpoint-md) {
+      width: 28px;
+      height: 56px;
+      &.dark-mode {
+        background-color: $gray-600;
+        box-shadow: var(--color-shadow);
+        .switch__handle {
+          transform: translateY(28px);
+        }
+      }
+      span {
+        position: absolute;
+        z-index: 1;
+        top: 5px;
+        right: 5px;
+        height: 18px;
+        width: 18px;
+        &:nth-child(1) {
+          top: unset;
+          bottom: 5px;
+        }
+      }
     }
   }
-  &:hover,
-  &:hover.special {
-    cursor: default;
-    padding-left: 0;
-    background-position-x: 0;
+  &__switch {
+    @media screen and (max-width: $breakpoint-md) {
+      position: relative;
+      width: 28px;
+      height: 56px;
+      margin: 0px 15px auto auto;
+    }
+  }
+  &__dropdown {
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    &.mq-md {
+      margin-top: auto;
+      width: fit-content;
+    }
   }
 }

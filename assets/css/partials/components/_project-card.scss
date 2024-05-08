@@ -2,13 +2,23 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(470px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
   gap: 40px;
+  @media screen and (max-width: $breakpoint-sm) {
+    display: block;
+  }
+  @media screen and (max-width: $breakpoint-xxl) {
+    gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  }
 }
 
 .card {
   display: flex;
   transition: all $transition-fast;
+  @media screen and (max-width: $breakpoint-sm) {
+    margin-bottom: 10px;
+  }
   &__preview,
   &__info {
     background-color: var(--color-card-background);
@@ -19,6 +29,9 @@
     border-bottom-right-radius: 0;
     padding: 2px;
     position: relative;
+    @media screen and (max-width: $breakpoint-sm) {
+      max-width: 200px;
+    }
     &--img {
       position: relative;
       border-radius: $border-xs;
@@ -58,7 +71,6 @@
   }
   &__info {
     word-break: break-word;
-    width: 270px;
     max-width: 100%;
     height: 235px;
     overflow: auto;
@@ -81,6 +93,13 @@
     button {
       bottom: 15px;
       margin-top: auto;
+    }
+    @media screen and (max-width: $breakpoint-xxl) {
+      height: 200px;
+    }
+    @media screen and (max-width: $breakpoint-md) {
+      align-items: normal;
+      min-height: 180px;
     }
   }
 }
