@@ -66,11 +66,10 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 300px;
+    cursor: pointer;
     &:hover span svg path {
       stroke: #ff6194;
     }
-    cursor: pointer;
     &.mq-md {
       margin-top: auto;
     }

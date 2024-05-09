@@ -14,9 +14,9 @@
   }
   &__intro {
     @media screen and (max-width: $breakpoint-md) {
-      display: grid;
-      grid-auto-flow: column;
+      display: flex;
       gap: 20px;
+      flex-direction: row;
     }
     p {
       font-family: "Mada", sans-serif;
@@ -44,7 +44,6 @@
         background-size: 140%;
         background-position-y: 42%;
         width: 90px;
-        height: 110px;
         border-radius: 4px;
       }
       a {
@@ -71,8 +70,8 @@
         p,
         a {
           font-size: $font-md;
-          width: 300px;
-          max-width: 100%;
+          width: 100%;
+          max-width: 350px;
         }
       }
     }
@@ -155,8 +154,9 @@
     flex-direction: column;
     position: relative;
     &.mq-md {
+      width: 100%;
+      max-width: 350px;
       margin-top: auto;
-      width: fit-content;
     }
   }
 }
