@@ -19,6 +19,9 @@
   @media screen and (max-width: $breakpoint-sm) {
     margin-bottom: 10px;
   }
+  &__wrapper {
+    display: contents;
+  }
   &__preview,
   &__info {
     background-color: var(--color-card-background);
@@ -94,10 +97,7 @@
       bottom: 15px;
       margin-top: auto;
     }
-    @media screen and (max-width: $breakpoint-xxl) {
-      height: 200px;
-    }
-    @media screen and (max-width: $breakpoint-md) {
+    @media screen and (max-width: $breakpoint-xl) {
       align-items: normal;
       max-height: 100%;
       height: auto;
