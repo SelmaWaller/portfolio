@@ -1,7 +1,8 @@
 {
   "projects": [
     {
-      "preview": "img/figma/cms-prototype.webp",
+      "previewImg": "img/figma/cms-prototype-img.webp",
+      "previewGif": "img/figma/cms-prototype.webp",
       "title": "CMS prototype",
       "subtitle": "2023",
       "subtitleNoLinkText": "@work, UX/UI",
@@ -9,7 +10,8 @@
       "buttonText": "Open in Figma"
     },
     {
-      "preview": "img/figma/gps.webp",
+      "previewImg": "img/figma/gps-img.webp",
+      "previewGif": "img/figma/gps.webp",
       "title": "Glasspaper Soltions",
       "subtitle": "2023",
       "subtitleNoLinkText": "@work, UX/UI",
@@ -18,7 +20,8 @@
       "buttonText": "Open in Figma"
     },
     {
-      "preview": "img/figma/sd.gif",
+      "previewImg": "img/figma/sd.jpeg",
+      "previewGif": "img/figma/sd.gif",
       "title": "Sikkerhets-distributøren",
       "subtitle": "2021",
       "subtitleNoLinkText": "hobby project",
@@ -27,7 +30,8 @@
       "buttonText": "Open in Figma"
     },
     {
-      "preview": "img/figma/adminportal.webp",
+      "previewImg": "img/figma/adminportal-img.webp",
+      "previewGif": "img/figma/adminportal.webp",
       "title": "Admin portal",
       "subtitle": "2021",
       "subtitleNoLinkText": "@work, first UX/UI project 🥳",

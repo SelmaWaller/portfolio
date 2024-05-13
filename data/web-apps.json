@@ -1,7 +1,8 @@
 {
   "apps": [
     {
-      "preview": "/img/web-apps/rehash.webp",
+      "previewImg": "img/web-apps/rehash-img.webp",
+      "previewGif": "img/web-apps/rehash.webp",
       "title": "Rehash project",
       "subtitle": "2024",
       "subtitleLink": "https://github.com/SelmaWaller/typescript",
@@ -10,7 +11,8 @@
       "buttonText": "Check it out"
     },
     {
-      "preview": "/img/web-apps/yumiru.webp",
+      "previewImg": "img/web-apps/yumiru-img.webp",
+      "previewGif": "img/web-apps/yumiru.webp",
       "title": "Japanese basics",
       "subtitle": "2020",
       "subtitleLink": "https://github.com/SelmaWaller/yumiru",
@@ -20,7 +22,8 @@
       "buttonText": "Check it out"
     },
     {
-      "preview": "/img/web-apps/mtg.webp",
+      "previewImg": "img/web-apps/mtg-img.webp",
+      "previewGif": "img/web-apps/mtg.webp",
       "title": "MTG: Web app",
       "subtitle": "2020",
       "subtitleLink": "https://github.com/SelmaWaller/magic-the-gathering",
@@ -30,7 +33,8 @@
       "buttonText": "Check it out"
     },
     {
-      "preview": "/img/web-apps/css-game.webp",
+      "previewImg": "img/web-apps/css-game-img.webp",
+      "previewGif": "img/web-apps/css-game.webp",
       "title": "CSS animation game",
       "subtitle": "2019",
       "subtitleLink": "https://github.com/SelmaWaller/adventure-game",
@@ -40,7 +44,8 @@
       "buttonText": "Check it out"
     },
     {
-      "preview": "/img/web-apps/goz.webp",
+      "previewImg": "img/web-apps/goz-img.webp",
+      "previewGif": "img/web-apps/goz.webp",
       "title": "Game of Zones",
       "subtitle": "2019",
       "subtitleLink": "https://github.com/SelmaWaller/game-of-zones",
@@ -50,7 +55,8 @@
       "buttonText": "Check it out"
     },
     {
-      "preview": "/img/web-apps/spacex.webp",
+      "previewImg": "img/web-apps/spacex-img.webp",
+      "previewGif": "img/web-apps/spacex.webp",
       "title": "Spacex microsite",
       "subtitle": "2019",
       "subtitleLink": "https://github.com/SelmaWaller/spacex",
@@ -60,7 +66,8 @@
       "buttonText": "Check it out"
     },
     {
-      "preview": "/img/web-apps/unso.webp",
+      "previewImg": "img/web-apps/unso-img.webp",
+      "previewGif": "img/web-apps/unso.webp",
       "title": "UN Students Oslo",
       "subtitle": "2018",
       "subtitleLink": "https://github.com/SelmaWaller/un-students-oslo",

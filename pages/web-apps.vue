@@ -1,8 +1,10 @@
 <script setup lang="ts">
-import ProjectCard from "~/src/components/global/ProjectCard.vue";
 import projects from "~/data/web-apps.json";
+import ProjectCardGrid from "~/src/components/global/ProjectCardGrid.vue";
 </script>
 
 <template>
-  <div><ProjectCard :projects="projects.apps" /></div>
+  <div>
+    <ProjectCardGrid :projects="projects.apps" />
+  </div>
 </template>
