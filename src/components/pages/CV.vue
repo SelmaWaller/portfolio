@@ -78,6 +78,31 @@ const { profile, employmentHistory, education, references } = body.content;
             {{ employmentHistory.endDate }}
           </p>
           <p>{{ employmentHistory.description }}</p>
+          <div class="section__content--projects">
+            <p>
+              {{ employmentHistory.projectHistoryTitle }}
+            </p>
+            <ul>
+              <li
+                v-for="(project, index) in employmentHistory.projectHistoryList"
+                :key="index"
+              >
+                - {{ project }}
+              </li>
+            </ul>
+            <p>
+              {{ employmentHistory.projectHistoryDescription }}
+            </p>
+            <ul>
+              <li
+                v-for="(tool, index) in employmentHistory.projectHistoryTools"
+                :key="index"
+              >
+                -
+                {{ tool }}
+              </li>
+            </ul>
+          </div>
         </CVBodySection>
 
         <CVBodySection :bodyContent="true" title="Education">
