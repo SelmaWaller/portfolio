@@ -90,7 +90,7 @@ const { profile, employmentHistory, education, references } = body.content;
             {{ education.endDate }}
           </p>
           <p>{{ education.description }}</p>
-          <p>Some of the skills aquired at this institution:</p>
+          <p>Some of the skills acquired at this institution:</p>
           <ul v-for="(skill, index) in education.skills" :key="index">
             <li>- {{ skill }}</li>
           </ul>
