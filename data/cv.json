@@ -25,8 +25,8 @@
         ],
         "skills": [
           {
-            "name": "Typescript",
-            "level": "40"
+            "name": "Javascript/Typescript",
+            "level": "75"
           },
           {
             "name": "Vue3/Nuxt3",
@@ -41,8 +41,8 @@
             "level": "100"
           },
           {
-            "name": "Scrum/Agile",
-            "level": "100"
+            "name": "UI/UX Design",
+            "level": "80"
           }
         ],
         "languages": [
@@ -57,9 +57,9 @@
         ],
         "interests": [
           "Spending time with my husband and kids",
-          "Watercolor",
+          "Watercolor/painting",
           "Studying languages (Japanese, Icelandic)",
-          "Amigurumi",
+          "Amigurumi/crochet",
           "Video- and board games",
           "Hiking"
         ]
@@ -74,7 +74,34 @@
           "location": "Oslo",
           "startDate": "Sep 2020",
           "endDate": "May 2024",
-          "description": "After the trial period at Glasspaper Solutions, I led website design and development projects for various company entities. I collaborated closely with clients for design concepts before executing them independently. My role evolved into exclusive frontend development over several years."
+          "description": "After the trial period at Glasspaper Solutions, I led website design and development projects for various company entities. I collaborated closely with clients for design concepts before executing them independently (excluding more complex parts such as rest-apis and vuex). My role evolved into exclusive frontend development over several years.",
+          "projectHistoryTitle": "These are a handful of the projects I worked on over the years:",
+          "projectHistoryList": [
+            "CMS system [name withheld]",
+            "glasspaper-solutions.no",
+            "Eiendomsverdi",
+            "Inspir-it",
+            "Kamude",
+            "Adaptiva",
+            "Sikkerhetsdistributøren"
+          ],
+          "projectHistoryDescription": "My role in these projects was primarily frontend development, but I was also tasked with UI/UX on some of them. I also learned a thing or two about backend development. During these projects, I used a bunch of different tools and technologies, such as:",
+          "projectHistoryTools": [
+            "Git",
+            "Azure DevOps",
+            "Vue.js",
+            "Nuxt.js",
+            "Vuex",
+            "Angular",
+            "Typescript",
+            "Storybook",
+            "Bootstrap",
+            ".NET",
+            "Insomnia",
+            "Figma",
+            "Scrum/Agile",
+            "Adobe CC (Illustrator, Photoshop, Adobe Dimension)"
+          ]
         },
         "education": {
           "degree": "Higher Professional Degree",
@@ -82,8 +109,15 @@
           "location": "Oslo",
           "startDate": "Aug 2018",
           "endDate": "Jun 2020",
-          "description": "Vocational school specializing in frontend development with a strong emphasis on UX/UI design and graphic illustration.",
-          "skills": ["React", "Redux", "JavaScript", "Adobe CC"]
+          "description": "Vocational school specializing in frontend development with a strong emphasis on UI/UX design and graphic illustration.",
+          "skills": [
+            "React",
+            "Redux",
+            "Javascript",
+            "HTML5/CSS3",
+            "Interaction design",
+            "Adobe CC"
+          ]
         },
         "references": {
           "text": "References available upon request"

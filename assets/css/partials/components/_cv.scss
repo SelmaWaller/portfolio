@@ -34,8 +34,8 @@
   &__body {
     display: grid;
     grid-template-columns: 300px auto;
-    gap: 50px;
-    margin-top: 40px;
+    gap: 30px;
+    margin-top: 20px;
     border-top: 1px solid var(--color-elements);
     @media screen and (max-width: $breakpoint-xxl) {
       grid-template-columns: 210px auto;
@@ -47,7 +47,7 @@
     }
     &--sidebar {
       position: relative;
-      padding-right: 70px;
+      padding-right: 50px;
       @media screen and (max-width: $breakpoint-xxl) {
         padding-right: 20px;
       }
@@ -86,7 +86,7 @@
     .section {
       position: relative;
       h3 {
-        padding-top: 50px;
+        padding-top: 30px;
         @media screen and (max-width: $breakpoint-xxl) {
           padding-top: 20px;
         }
@@ -99,7 +99,7 @@
         &:last-child {
           padding: 0;
         }
-        @media screen and (min-width: $breakpoint-xxxl) {
+        @media screen and (min-width: $breakpoint-xl) {
           width: 80%;
         }
       }
@@ -142,6 +142,11 @@
           }
           .location {
             padding: 2px 0 12px 10px !important;
+          }
+        }
+        &--projects {
+          ul:nth-of-type(odd) {
+            padding: 0 0 12px;
           }
         }
       }
