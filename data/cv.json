@@ -26,7 +26,7 @@
         "skills": [
           {
             "name": "Javascript/Typescript",
-            "level": "75"
+            "level": "80"
           },
           {
             "name": "Vue3/Nuxt3",
@@ -73,7 +73,7 @@
           "company": "Glasspaper Solutions AS",
           "location": "Oslo",
           "startDate": "Sep 2020",
-          "endDate": "May 2024",
+          "endDate": "Apr 2024",
           "description": "After the trial period at Glasspaper Solutions, I led website design and development projects for various company entities. I collaborated closely with clients for design concepts before executing them independently (excluding more complex parts such as rest-apis and vuex). My role evolved into exclusive frontend development over several years.",
           "projectHistoryTitle": "These are a handful of the projects I worked on over the years:",
           "projectHistoryList": [
@@ -91,16 +91,19 @@
             "Azure DevOps",
             "Vue.js",
             "Nuxt.js",
-            "Vuex",
-            "Angular",
+            "Figma",
+            "HTML/CSS",
+            "Javascript",
             "Typescript",
+            "Vuex",
+            "Sass",
+            "Scrum/Agile",
+            "Adobe CC (Illustrator, Photoshop, Adobe Dimension)",
             "Storybook",
+            "Angular",
             "Bootstrap",
             ".NET",
-            "Insomnia",
-            "Figma",
-            "Scrum/Agile",
-            "Adobe CC (Illustrator, Photoshop, Adobe Dimension)"
+            "Insomnia"
           ]
         },
         "education": {
