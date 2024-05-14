@@ -85,25 +85,18 @@
             "Adaptiva",
             "Sikkerhetsdistributøren"
           ],
-          "projectHistoryDescription": "My role in these projects was primarily frontend development, but I was also tasked with UI/UX on some of them. I also learned a thing or two about backend development. During these projects, I used a bunch of different tools and technologies, such as:",
+          "projectHistoryDescription": "My role in these projects was primarily frontend development, but I was also tasked with UI/UX on some of them. During these projects, I used a bunch of different tools and technologies, of which some of them are:",
           "projectHistoryTools": [
             "Git",
-            "Azure DevOps",
-            "Vue.js",
-            "Nuxt.js",
-            "Figma",
-            "HTML/CSS",
-            "Javascript",
-            "Typescript",
-            "Vuex",
-            "Sass",
-            "Scrum/Agile",
-            "Adobe CC (Illustrator, Photoshop, Adobe Dimension)",
+            "Vue.js/Nuxt.js",
+            "HTML/CSS (SASS)",
+            "Javascript/Typescript",
             "Storybook",
-            "Angular",
-            "Bootstrap",
-            ".NET",
-            "Insomnia"
+            "Figma",
+            "Vuex",
+            "Adobe CC (Illustrator, Photoshop, Adobe Dimension)",
+            "Scrum/Agile",
+            "Azure DevOps"
           ]
         },
         "education": {
