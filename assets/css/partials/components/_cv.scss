@@ -15,6 +15,12 @@
     }
   }
   &__head {
+    position: relative;
+    &--open-pdf {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
     h2 {
       line-height: 32px;
       @media screen and (max-width: $breakpoint-xxl) {

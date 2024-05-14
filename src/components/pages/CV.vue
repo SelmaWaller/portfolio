@@ -14,6 +14,12 @@ const { profile, employmentHistory, education, references } = body.content;
         {{ head.firstName }}<span>{{ head.lastName }}</span>
       </h2>
       <p>{{ head.jobTitle }}</p>
+      <a
+        class="cv__head--open-pdf"
+        target="_blank"
+        href="/selma-waller-isfeld_cv.pdf"
+        ><button class="button">Open PDF</button></a
+      >
     </div>
     <div class="cv__body">
       <div class="cv__body--sidebar">
@@ -24,6 +30,8 @@ const { profile, employmentHistory, education, references } = body.content;
             <p>{{ details.address }}</p>
             <h5>Phone</h5>
             <p>{{ details.phone }}</p>
+            <h5>Email</h5>
+            <p>{{ details.email }}</p>
             <h5>Date of birth</h5>
             <p>{{ details.dob }}</p>
           </div>
